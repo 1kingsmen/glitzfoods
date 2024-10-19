@@ -1,0 +1,2721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons&display=swap">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="preloader">
+    </div> -->
+
+    <div class="cover">
+       
+        
+        <header>
+            <div class="logo">
+             <img src="images/black.png" alt="">
+            </div>
+             <div class="nav">
+                 <ul>
+                     <div class="home">
+                         <span class="material-symbols-outlined">
+                             home
+                         </span>
+                         <p><a href="home.html">home</a></p>
+                     </div>
+                     <div class="menu activee">
+                         <span class="material-symbols-outlined">
+                             fastfood
+                         </span>
+                         <p><a href="menu.html">menu</a></p>
+                     </div>
+                     <div class="contact">
+                         <span class="material-symbols-outlined">
+                             contact_page
+                         </span>
+                         <p><a href="contact.html">contact</a></p>
+                     </div>
+                 </ul>
+             </div>
+             <div class="start">
+                 <div class="location">
+                     <span class="material-symbols-outlined">
+                         location_on
+                     </span>
+                     <p>opposite national open university</p>
+                 </div>
+                 <div style="border-left: 2px solid #edecec; height: 50px; margin-left: 10px; margin-top: 5px;"></div>
+                 <div style="border-left: 2px solid #edecec; height: 50px; margin-left: 10px; margin-top: 5px;"></div>
+                 <div class="socials">
+                     <ion-icon name="logo-twitter"></ion-icon>
+                     <ion-icon name="logo-instagram" style="margin-left: 5px;"></ion-icon>
+                 </div>
+             </div>
+         </header>
+
+
+    <div class="container">
+
+
+        <div class="section1">
+<div class="category">
+    <div class="top">
+        <div class="h2">
+            <h2>menu</h2>
+        </div>
+        <div class="h3">
+            <h3>What are you going <br>to eat today?</h3>
+        </div>
+        <div class="shop">
+
+        
+        <div class="search">
+            <div class="icon">
+                <span class="material-symbols-outlined"  >
+                search
+                </span>
+            </div>
+            
+            <input type="text" placeholder="Search menu"  id="search-input">
+        </div>
+       <button class="toggle-button" id="toggle-section">
+        <span class="material-symbols-outlined">shopping_bag</span>
+        <!-- Red dot indicator -->
+        <span class="notification-dot" style="display:none;"></span>
+    </button>
+    
+        </div>
+    </div>
+</div>
+    <ul class="categories" style="overflow-x: scroll !important;">
+        <li class="menu-item active" data-target="all">All Menu</li>
+        <li class="menu-item" data-target="food">Food</li>
+        <li class="menu-item" data-target="swallows">Swallows</li>
+        <li class="menu-item" data-target="soups">Soups</li>
+        <li class="menu-item" data-target="protein">Protein</li>
+        <li class="menu-item" data-target="shawarma">shawarmas</li>
+                <li class="menu-item" data-target="ice">ice-cream</li>
+        <li class="menu-item" data-target="youghgut">yohgut</li>
+        <li class="menu-item" data-target="beer">beer</li>
+        <li class="menu-item" data-target="drinks">drinks</li>
+    </ul>
+
+
+
+  
+    
+
+
+<!-- ALL MENU -->
+ 
+<div class="all-menu  content  active" id="all">
+    <section class="layout">
+
+        <div class="card">
+            <div class="image">
+                <img src="images/white rice.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">white Rice</div>
+                <div class="p">Foods</div>
+                <div class="base">
+                    <div class="price">&#8358;1000</div>
+                    <span class="material-symbols-outlined shopping-basket" >
+                        shopping_basket
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="image">
+                <img src="images/rice and beans.webp" alt="">
+            </div>
+            <div class="dis">
+                <div class="name"> Rice and beans</div>
+                <div class="p">Foods</div>
+                <div class="base">
+                    <div class="price">&#8358;1500</div>
+                    <span class="material-symbols-outlined shopping-basket" >
+                        shopping_basket
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="image">
+                <img src="images/fried-jellof.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">fried and jellof rice</div>
+                <div class="p">Foods</div>
+                <div class="base">
+                    <div class="price">&#8358;1500</div>
+                    <span class="material-symbols-outlined shopping-basket" >
+                        shopping_basket
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="image">
+                <img src="images/fried-rice.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">Fried Rice</div>
+                <div class="p">Foods</div>
+                <div class="base">
+                    <div class="price">&#8358;1000</div>
+                    <span class="material-symbols-outlined shopping-basket" >
+                        shopping_basket
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="images/jellof-rice.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">jellof rice</div>
+                <div class="p">foods</div>
+                <div class="base">
+                      <div class="price">&#8358;1000</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="images/moi-moi.jpeg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">moi moi</div>
+                <div class="p">foods</div>
+                <div class="base">
+                      <div class="price">&#8358;1000</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="images/salad.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">salad</div>
+                <div class="p">foods</div>
+                <div class="base">
+                      <div class="price">&#8358;500</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+            <div class="card">
+            <div class="image">
+                <img src="images/fried-plantain.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">fried plantain</div>
+                <div class="p">foods</div>
+                <div class="base">
+                      <div class="price">&#8358;500</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+        
+        <div class="card">
+            <div class="image">
+                <img src="images/fries-egg.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">chips and eggs</div>
+                <div class="p">foods</div>
+                <div class="base">
+                      <div class="price">&#8358;1500</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card">
+            <div class="image">
+                <img src="images/indomie-egg.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">indomie and egg</div>
+                <div class="p">foods</div>
+                <div class="base">
+                      <div class="price">&#8358;1200</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card" data-category="swallows">
+            <div class="image">
+                <img src="images/semovita.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">semovita</div>
+                <div class="p">swallows</div>
+                <div class="base">
+                      <div class="price">&#8358;1000</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+        
+        <div class="card" data-category="swallows">
+            <div class="image">
+                <img src="images/amala.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">amala</div>
+                <div class="p">swallows</div>
+                <div class="base">
+                      <div class="price">&#8358;1000</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card" data-category="swallows">
+            <div class="image">
+                <img src="images/pounded-yam.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">pounded yam</div>
+                <div class="p">swallows</div>
+                <div class="base">
+                    <div class="price">&#8358;1000</div>
+                    <span class="material-symbols-outlined shopping-basket" onclick="addToCart(this)">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+        
+        <div class="card" data-category="swallows">
+            <div class="image">
+                <img src="images/eba.jpeg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">eba</div>
+                <div class="p">swallows</div>
+                <div class="base">
+                      <div class="price">&#8358;1000</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+        
+        <div class="card" data-category="swallows">
+            <div class="image">
+                <img src="images/akpu.jpeg" alt="akpu">
+            </div>
+            <div class="dis">
+                <div class="name">akpu</div>
+                <div class="p">swallows</div>
+                <div class="base">
+                    <div class="price">&#8358;700</div>
+                    <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" >
+            <div class="image">
+                <img src="images/stew.jpeg" alt="tomato stew">
+            </div>
+            <div class="dis">
+                <div class="name">tomato stew</div>
+                <div class="p" style="font-size: 12px;">must order with swallow</div>
+                <div class="base">
+                    <div class="price">&#8358;0</div>
+                    <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+
+
+        
+        <div class="card" data-category="soups">
+            <div class="image">
+                <img src="images/egusi.jpeg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">egusi soup</div>
+                <div class="p" style="font-size: 12px;">must order with swallow</div>
+                <div class="base">
+                    <div class="price">&#8358;0</div>
+                    <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card" data-category="soups">
+            <div class="image">
+                <img src="images/vegetable.jpeg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">vegetable soup</div>
+                <div class="p" style="font-size: 12px;">must order with swallow</div>
+                <div class="base">
+                    <div class="price">&#8358;0</div>
+                    <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card" data-category="soups">
+            <div class="image">
+                <img src="images/ogbono.jpeg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">ogbono doup</div>
+                <div class="p" style="font-size: 12px;">must order with swallow</div>
+                <div class="base">
+                    <div class="price">&#8358;0</div>
+                    <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card" data-category="soups">
+            <div class="image">
+                <img src="images/ewedu.jpeg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">ewedu soup</div>
+                <div class="p" style="font-size: 12px;">must order with swallow</div>
+                <div class="base">
+                    <div class="price">&#8358;0</div>
+                    <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card" data-category="soups">
+            <div class="image">
+                <img src="images/oha.jpeg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">oha soup</div>
+                <div class="p" style="font-size: 12px;">must order with swallow</div>
+                    <div class="base">
+                        <div class="price">&#8358;0</div>
+                    <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card" data-category="soups">
+            <div class="image">
+                <img src="images/bitter-leaf.jpeg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">bitter leaf soup</div>
+                <div class="p" style="font-size: 12px;">must order with swallow</div>
+                <div class="base">
+                    <div class="price">&#8358;0</div>
+                    <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="card" data-category="soups">
+            <div class="image">
+                <img src="images/okro.jpeg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">okro soup</div>
+                <div class="p" style="font-size: 12px;">must order with swallow</div>
+                <div class="base">
+                    <div class="price">&#8358;0</div>
+                    <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        <div class="card" data-category="soups">
+            <div class="image">
+                <img src="images/white-okro.jpeg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">white okro</div>
+                <div class="p" style="font-size: 12px;">must order with swallow</div>
+                <div class="base">
+                    <div class="price">&#8358;0</div>
+                    <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card">
+            <div class="image">
+                <img src="images/beef.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">beef</div>
+                <div class="p">protien</div>
+                <div class="base">
+                      <div class="price">&#8358;1000</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card">
+            <div class="image">
+                <img src="images/pomo.jpeg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">pomo</div>
+                <div class="p">protein</div>
+                <div class="base">
+                      <div class="price">&#8358;500</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card">
+            <div class="image">
+                <img src="images/intestine-pepper.jpeg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">intestine </div>
+                <div class="p">protein</div>
+                <div class="base">
+                      <div class="price">&#8358;1000</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card">
+            <div class="image">
+                <img src="images/fried-fish.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">fish</div>
+                <div class="p">protein</div>
+                <div class="base">
+                      <div class="price">&#8358;1000</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card">
+            <div class="image">
+                <img src="images/goat-meat.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">goat meat</div>
+                <div class="p">protein</div>
+                <div class="base">
+                      <div class="price">&#8358;1000</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card">
+            <div class="image">
+                <img src="images/cowleg.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">cow leg</div>
+                <div class="p">protein</div>
+                <div class="base">
+                      <div class="price">&#8358;1000</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card">
+            <div class="image">
+                <img src="images/cowtail.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">cow tail</div>
+                <div class="p">protein</div>
+                <div class="base">
+                      <div class="price">&#8358;1000</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card">
+            <div class="image">
+                <img src="images/fried-chicken.jpg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">chicken</div>
+                <div class="p">protein</div>
+                <div class="base">
+                      <div class="price">&#8358;3000</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card">
+            <div class="image">
+                <img src="images/cowleg-pepper.jpeg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">cow leg pepper soup</div>
+                <div class="p">protein</div>
+                <div class="base">
+                      <div class="price">&#8358;3000</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card">
+            <div class="image">
+                <img src="images/intestine-pepper.jpeg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">intestine pepper soup</div>
+                <div class="p">protein</div>
+                <div class="base">
+                      <div class="price">&#8358;3000</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+        
+        <div class="card">
+            <div class="image">
+                <img src="images/goatmeat-pepper.jpeg" alt="">
+            </div>
+            <div class="dis">
+                <div class="name">goat meat pepper soup</div>
+                <div class="p">protein</div>
+                <div class="base">
+                      <div class="price">&#8358;3000</div>
+                      <span class="material-symbols-outlined shopping-basket">
+                        shopping_basket
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+
+
+
+        
+            <div class="card">
+                <div class="image">
+                    <img src="images/shawarma.avif" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">shawarma</div>
+                    <div class="p">shawarmas</div>
+                    <div class="base">
+                          <div class="price">&#8358;3100</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/sussage-shawarma.jpg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">sussage shawarma</div>
+                    <div class="p">shawarmas</div>
+                    <div class="base">
+                          <div class="price">&#8358;3300</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/beef-shawarma.jpg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">beef shawarma </div>
+                    <div class="p">shawarmas</div>
+                    <div class="base">
+                          <div class="price">&#8358;3200</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/chicken shawarma.avif" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">chicken shawarma</div>
+                    <div class="p">shawarmas</div>
+                    <div class="base">
+                          <div class="price">&#8358;3700</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+        
+            
+            <div class="card" >
+                <div class="image">
+                    <img src="images/chicken-sussage.avif" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">chicken and sussage</div>
+                    <div class="p">shawarmas</div>
+                    <div class="base">
+                          <div class="price">&#8358;3800</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+
+            <div class="card">
+                <div class="image">
+                    <img src="images/fanice250.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">fan ice/250mil</div>
+                    <div class="p">ice cream</div>
+                    <div class="base">
+                          <div class="price">&#8358;1000</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/500fanice.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">fan ice/500mil</div>
+                    <div class="p">ice-cream</div>
+                    <div class="base">
+                          <div class="price">&#8358;2000</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/fanice1litre.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">fan ice/1litre</div>
+                    <div class="p">ice cream</div>
+                    <div class="base">
+                          <div class="price">&#8358;3000</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="image">
+                    <img src="images/vanilla-farmfresh.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">vanilla/500mil</div>
+                    <div class="p">yohgurt</div>
+                    <div class="base">
+                          <div class="price">&#8358;2800</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/strawberry-farmfresh.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">strawberry/500mil</div>
+                    <div class="p">yoghurt</div>
+                    <div class="base">
+                          <div class="price">&#8358;2800</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/1vanilla-farmfresh.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">vanilla/1litre</div>
+                    <div class="p">yoghurt/div>
+                    <div class="base">
+                          <div class="price">&#8358;4800</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/1strawberry-farmftresh.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">strawberry/1litre</div>
+                    <div class="p">yohgurt/div>
+                    <div class="base">
+                          <div class="price">&#8358;4800</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/country.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">country yoghurt</div>
+                    <div class="p">swallows</div>
+                    <div class="base">
+                          <div class="price">&#8358;2000</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="image">
+                    <img src="images/hero.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">hero</div>
+                    <div class="p">beer</div>
+                    <div class="base">
+                          <div class="price">&#8358;700</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/guiness.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">guiness</div>
+                    <div class="p">beer</div>
+                    <div class="base">
+                          <div class="price">&#8358;1000</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/star.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">star</div>
+                    <div class="p">beer</div>
+                    <div class="base">
+                          <div class="price">&#8358;800</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/trophy.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">trophy</div>
+                    <div class="p">beer</div>
+                    <div class="base">
+                          <div class="price">&#8358;700</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/legend.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">legend</div>
+                    <div class="p">beer</div>
+                    <div class="base">
+                          <div class="price">&#8358;700</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="image">
+                    <img src="images/life.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">life</div>
+                    <div class="p">beer</div>
+                    <div class="base">
+                          <div class="price">&#8358;700</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+
+            <div class="card">
+                <div class="image">
+                    <img src="images/maltina.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">maltina</div>
+                    <div class="p">drinks</div>
+                    <div class="base">
+                          <div class="price">&#8358;700</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/coke.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">coca cola</div>
+                    <div class="p">drinks</div>
+                    <div class="base">
+                          <div class="price">&#8358;400</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/pineapple-juice.jpg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">pineapple juice</div>
+                    <div class="p">drinks</div>
+                    <div class="base">
+                          <div class="price">&#8358;1500</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/water-melon.jpg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">water melon juice</div>
+                    <div class="p">drinks</div>
+                    <div class="base">
+                          <div class="price">&#8358;1700</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+            
+            <div class="card">
+                <div class="image">
+                    <img src="images/suger-cane juice.jpg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">sugercane juice</div>
+                    <div class="p">drinks</div>
+                    <div class="base">
+                          <div class="price">&#8358;1500</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="image">
+                    <img src="images/carrot juice.avif" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">carrot juice</div>
+                    <div class="p">drinks</div>
+                    <div class="base">
+                          <div class="price">&#8358;1500</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+        
+            <div class="card">
+                <div class="image">
+                    <img src="images/tiggernut-juice.avif" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">date and tigernut juice</div>
+                    <div class="p">drinks</div>
+                    <div class="base">
+                          <div class="price">&#8358;1700</div>
+                          <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+        
+
+        
+    </div>
+
+
+<!-- END -->
+
+
+
+
+    <!-- FOOD -->
+<div class="food  content" id="food">
+
+    <div class="card">
+        <div class="image">
+            <img src="images/white rice.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">white Rice</div>
+            <div class="p">Foods</div>
+            <div class="base">
+                <div class="price">&#8358;1000</div>
+                <span class="material-symbols-outlined shopping-basket" >
+                    shopping_basket
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="image">
+            <img src="images/rice and beans.webp" alt="">
+        </div>
+        <div class="dis">
+            <div class="name"> Rice and beans</div>
+            <div class="p">Foods</div>
+            <div class="base">
+                <div class="price">&#8358;1500</div>
+                <span class="material-symbols-outlined shopping-basket" >
+                    shopping_basket
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <div class="image">
+            <img src="images/fried-jellof.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">fried and jellof rice</div>
+            <div class="p">Foods</div>
+            <div class="base">
+                <div class="price">&#8358;1500</div>
+                <span class="material-symbols-outlined shopping-basket" >
+                    shopping_basket
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="image">
+            <img src="images/fried-rice.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">fried rice</div>
+            <div class="p">foods</div>
+            <div class="base">
+                  <div class="price">&#8358;1000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image">
+            <img src="images/jellof-rice.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">jellof rice</div>
+            <div class="p">foods</div>
+            <div class="base">
+                  <div class="price">&#8358;1000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image">
+            <img src="images/moi-moi.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">moi moi</div>
+            <div class="p">foods</div>
+            <div class="base">
+                  <div class="price">&#8358;1000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image">
+            <img src="images/salad.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">salad</div>
+            <div class="p">foods</div>
+            <div class="base">
+                  <div class="price">&#8358;500</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+        <div class="card">
+        <div class="image">
+            <img src="images/fried-plantain.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">fried plantain</div>
+            <div class="p">foods</div>
+            <div class="base">
+                  <div class="price">&#8358;500</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/fries-egg.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">chips and eggs</div>
+            <div class="p">foods</div>
+            <div class="base">
+                  <div class="price">&#8358;1500</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/indomie-egg.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">indomie and egg</div>
+            <div class="p">foods</div>
+            <div class="base">
+                  <div class="price">&#8358;1200</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+</div>
+
+<!-- END -->
+
+
+
+<!-- SWALLOWS -->
+<div class="swallow  content"  id="swallows">
+    <div class="card" data-category="swallows">
+        <div class="image">
+            <img src="images/semovita.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">semovita</div>
+            <div class="p">swallows</div>
+            <div class="base">
+                  <div class="price">&#8358;1000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    
+    <div class="card" data-category="swallows">
+        <div class="image">
+            <img src="images/amala.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">amala</div>
+            <div class="p">swallows</div>
+            <div class="base">
+                  <div class="price">&#8358;1000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card" data-category="swallows">
+        <div class="image">
+            <img src="images/pounded-yam.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">pounded yam</div>
+            <div class="p">swallows</div>
+            <div class="base">
+                  <div class="price">&#8358;1000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    
+    <div class="card" data-category="swallows">
+        <div class="image">
+            <img src="images/eba.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">eba</div>
+            <div class="p">swallows</div>
+            <div class="base">
+                  <div class="price">&#8358;1000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    
+    <div class="card" data-category="swallows">
+        <div class="image">
+            <img src="images/akpu.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">akpu</div>
+            <div class="p">swallows</div>
+            <div class="base">
+                  <div class="price">&#8358;700</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+</div>
+
+<!-- END -->
+
+
+
+<!-- SOUPS -->
+<div class="soup  content"  id="soups">
+    <div class="card" data-category="soups">
+        <div class="image">
+            <img src="images/stew.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">tomato stew</div>
+            <div class="p" style="font-size: 12px;">must order with swallow</div>
+            <div class="base">
+                <div class="price">&#8358;0</div>
+                <span class="material-symbols-outlined shopping-basket" onclick="addToCart(this)">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card" data-category="soups">
+        <div class="image">
+            <img src="images/egusi.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">egusi soup</div>
+            <div class="p" style="font-size: 12px;">must order with swallow</div>
+            <div class="base">
+                <div class="price">&#8358;0</div>
+                <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card" data-category="soups">
+        <div class="image">
+            <img src="images/vegetable.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">vegetable soup</div>
+            <div class="p" style="font-size: 12px;">must order with swallow</div>
+            <div class="base">
+                <div class="price">&#8358;0</div>
+                <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card" data-category="soups">
+        <div class="image">
+            <img src="images/ogbono.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">ogbono doup</div>
+            <div class="p" style="font-size: 12px;">must order with swallow</div>
+            <div class="base">
+                <div class="price">&#8358;0</div>
+                <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card" data-category="soups">
+        <div class="image">
+            <img src="images/ewedu.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">ewedu soup</div>
+            <div class="p" style="font-size: 12px;">must order with swallow</div>
+            <div class="base">
+                <div class="price">&#8358;0</div>
+                <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card" data-category="soups">
+        <div class="image">
+            <img src="images/oha.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">oha soup</div>
+            <div class="p" style="font-size: 12px;">must order with swallow</div>
+                <div class="base">
+                    <div class="price">&#8358;0</div>
+                <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card" data-category="soups">
+        <div class="image">
+            <img src="images/bitter-leaf.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">bitter leaf soup</div>
+            <div class="p" style="font-size: 12px;">must order with swallow</div>
+            <div class="base">
+                <div class="price">&#8358;0</div>
+                <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+            <div class="card" data-category="soups">
+                <div class="image">
+                    <img src="images/okro.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">okro soup</div>
+                    <div class="p" style="font-size: 12px;">must order with swallow</div>
+                    <div class="base">
+                        <div class="price">&#8358;0</div>
+                        <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+    
+    
+            <div class="card" data-category="soups"         >
+                <div class="image">
+                    <img src="images/white-okro.jpeg" alt="">
+                </div>
+                <div class="dis">
+                    <div class="name">white okro</div>
+                    <div class="p" style="font-size: 12px;">must order with swallow</div>
+                    <div class="base">
+                        <div class="price">&#8358;0</div>
+                        <span class="material-symbols-outlined shopping-basket">
+                            shopping_basket
+                        </span>
+                    </div>
+                  
+                </div>
+            </div>
+          
+        
+    
+    
+    
+
+</div>
+
+<!-- END -->
+        
+
+<!-- PROTEIN -->
+<div class="protien  content"  id="protein">
+    <div class="card">
+        <div class="image">
+            <img src="images/beef.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">beef</div>
+            <div class="p">protien</div>
+            <div class="base">
+                  <div class="price">&#8358;1000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/pomo.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">pomo</div>
+            <div class="p">protein</div>
+            <div class="base">
+                  <div class="price">&#8358;500</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/intestine-pepper.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">intestine </div>
+            <div class="p">protein</div>
+            <div class="base">
+                  <div class="price">&#8358;1000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/fried-fish.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">fish</div>
+            <div class="p">protein</div>
+            <div class="base">
+                  <div class="price">&#8358;1000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/goat-meat.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">goat meat</div>
+            <div class="p">protein</div>
+            <div class="base">
+                  <div class="price">&#8358;1000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/cowleg.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">cow leg</div>
+            <div class="p">protein</div>
+            <div class="base">
+                  <div class="price">&#8358;1000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/cowtail.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">cow tail</div>
+            <div class="p">protein</div>
+            <div class="base">
+                  <div class="price">&#8358;1000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/fried-chicken.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">chicken</div>
+            <div class="p">protein</div>
+            <div class="base">
+                  <div class="price">&#8358;3000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/cowleg-pepper.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">cow leg pepper soup</div>
+            <div class="p">protein</div>
+            <div class="base">
+                  <div class="price">&#8358;3000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/intestine-pepper.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">intestine pepper soup</div>
+            <div class="p">protein</div>
+            <div class="base">
+                  <div class="price">&#8358;3000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/goatmeat-pepper.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">goat meat pepper soup</div>
+            <div class="p">protein</div>
+            <div class="base">
+                  <div class="price">&#8358;3000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+</div>
+
+<!-- END -->
+
+
+
+<!-- SHAWARMA -->
+<div class="shawarma  content"  id="shawarma">
+    <div class="card">
+        <div class="image">
+            <img src="images/shawarma.avif" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">shawarma</div>
+            <div class="p">shawarmas</div>
+            <div class="base">
+                  <div class="price">&#8358;3100</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/sussage-shawarma.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">sussage shawarma</div>
+            <div class="p">shawarmas</div>
+            <div class="base">
+                  <div class="price">&#8358;3300</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/beef-shawarma.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">beef shawarma </div>
+            <div class="p">shawarmas</div>
+            <div class="base">
+                  <div class="price">&#8358;3200</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/chicken shawarma.avif" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">chicken shawarma</div>
+            <div class="p">shawarmas</div>
+            <div class="base">
+                  <div class="price">&#8358;3700</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card" style="margin-top: -50px;">
+        <div class="image">
+            <img src="images/chicken-sussage.avif" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">chicken and sussage</div>
+            <div class="p">shawarmas</div>
+            <div class="base">
+                  <div class="price">&#8358;3800</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+</div>
+    <!-- END -->
+
+
+
+
+
+<!-- ICE-CREAM -->
+<div class="ice-cream content"  id="ice">
+    <div class="card">
+        <div class="image">
+            <img src="images/fanice250.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">fan ice/250mil</div>
+            <div class="p">ice cream</div>
+            <div class="base">
+                  <div class="price">&#8358;1000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/500fanice.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">fan ice/500mil</div>
+            <div class="p">ice-cream</div>
+            <div class="base">
+                  <div class="price">&#8358;2000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/fanice1litre.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">fan ice/1litre</div>
+            <div class="p">ice cream</div>
+            <div class="base">
+                  <div class="price">&#8358;3000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+</div>
+
+
+<!-- END -->
+
+
+<!-- YOGURT -->
+<div class="yohgut content"  id="youghgut">
+    <div class="card">
+        <div class="image">
+            <img src="images/vanilla-farmfresh.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">vanilla/500mil</div>
+            <div class="p">yohgurt</div>
+            <div class="base">
+                  <div class="price">&#8358;2800</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/strawberry-farmfresh.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">strawberry/500mil</div>
+            <div class="p">yoghurt</div>
+            <div class="base">
+                  <div class="price">&#8358;2800</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/1vanilla-farmfresh.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">vanilla/1litre</div>
+            <div class="p">yoghurt</div>
+            <div class="base">
+                  <div class="price">&#8358;4800</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+            </div>
+        </div>
+    
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/1strawberry-farmftresh.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">strawberry/1litre</div>
+            <div class="p">yohgurt</div>
+            <div class="base">
+                  <div class="price">&#8358;4800</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+            </div>
+        </div>
+    
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/country.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">country yoghurt</div>
+            <div class="p">swallows</div>
+            <div class="base">
+                  <div class="price">&#8358;2000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+</div>
+
+<!-- END -->
+
+
+
+<!-- BEER -->
+
+<div class="beer  content"  id="beer">
+    <div class="card">
+        <div class="image">
+            <img src="images/hero.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">hero</div>
+            <div class="p">beer</div>
+            <div class="base">
+                  <div class="price">&#8358;700</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/guiness.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">guiness</div>
+            <div class="p">beer</div>
+            <div class="base">
+                  <div class="price">&#8358;1000</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/star.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">star</div>
+            <div class="p">beer</div>
+            <div class="base">
+                  <div class="price">&#8358;800</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/trophy.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">trophy</div>
+            <div class="p">beer</div>
+            <div class="base">
+                  <div class="price">&#8358;700</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/legend.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">legend</div>
+            <div class="p">beer</div>
+            <div class="base">
+                  <div class="price">&#8358;700</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image">
+            <img src="images/life.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">life</div>
+            <div class="p">beer</div>
+            <div class="base">
+                  <div class="price">&#8358;700</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+</div>
+<!-- END -->
+
+
+
+<!-- DRINKS -->
+<div class="drinks  content"  id="drinks">
+    <div class="card">
+        <div class="image">
+            <img src="images/maltina.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">maltina</div>
+            <div class="p">drinks</div>
+            <div class="base">
+                  <div class="price">&#8358;700</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/coke.jpeg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">coca cola</div>
+            <div class="p">drinks</div>
+            <div class="base">
+                  <div class="price">&#8358;400</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/pineapple-juice.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">pineapple juice</div>
+            <div class="p">drinks</div>
+            <div class="base">
+                  <div class="price">&#8358;1500</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/water-melon.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">water melon juice</div>
+            <div class="p">drinks</div>
+            <div class="base">
+                  <div class="price">&#8358;1700</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <div class="image">
+            <img src="images/suger-cane juice.jpg" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">sugercane juice</div>
+            <div class="p">drinks</div>
+            <div class="base">
+                  <div class="price">&#8358;1500</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image">
+            <img src="images/carrot juice.avif" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">carrot juice</div>
+            <div class="p">drinks</div>
+            <div class="base">
+                  <div class="price">&#8358;1500</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="image">
+            <img src="images/tiggernut-juice.avif" alt="">
+        </div>
+        <div class="dis">
+            <div class="name">date and tigernut juice</div>
+            <div class="p">drinks</div>
+            <div class="base">
+                  <div class="price">&#8358;1700</div>
+                  <span class="material-symbols-outlined shopping-basket">
+                    shopping_basket
+                </span>
+            </div>
+          
+        </div>
+    </div>
+
+</div>
+<!-- END -->
+
+
+
+      </section>
+    
+</div>
+
+
+<div id="plate-notification" class="popup">
+    An additional 400 naira is added for each plate.
+</div>
+
+
+        <div class="section2" id="orderDetailsSection">
+            <div class="header">
+                <div class="h2">
+                    <h2>Order Details</h2>
+                </div>
+                <span class="material-symbols-outlined close-icon" id="close-section">
+                    close
+                </span>
+            </div>
+        
+            <div class="customer">
+                <div class="options">
+                    <div class="h2">
+                        <h2>Customer Details</h2>
+                    </div>
+                    <div class="info">
+                        <div class="delivery-options">
+                            <label>
+                                <input type="checkbox" id="pickup-option"> Pick Up
+                            </label>
+                            <label style="margin-left: 10px;">
+                                <input type="checkbox" id="delivery-option"> Delivery
+                            </label>
+                        </div>
+        
+                        <!-- Pick Up Address -->
+                        <div class="restaurant-address" style="display:none;">
+                            <label for="restaurant-address">Restaurant Address</label><br>
+                            <input type="text" id="restaurant-address" value="opposite national open university" readonly>
+                        </div>
+        
+                        <!-- Delivery Address -->
+                        <div class="delivery-address" style="display:none;">
+                            <label for="delivery-address">Delivery Address</label><br>
+                            <input type="text" id="delivery-address" placeholder="Enter your address">
+                            <div class="delivery-fee">
+                                <p>Delivery Fee: &#8358;500</p>
+                            </div>
+                        </div>
+        
+                        <!-- Customer Information -->
+                        <div class="customer-info">
+                            <div class="name">
+                                <label for="name">Your Name</label><br>
+                                <input type="text" id="name">
+                            </div>
+                            <div class="number">
+                                <label for="number">Your Number</label><br>
+                                <input type="tel" id="number">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Ordered Menu -->
+                <div class="ordered">
+                    <div class="h2">
+                        <h2>Ordered Menu (0)</h2>
+                    </div>
+                    <div class="box">
+                        <div class="list"></div>
+                    </div>
+                    <div class="total-price">Total Price: <span>&#8358;0</span></div>
+                </div>
+        
+                <!-- Done Button -->
+                <div class="done">
+                    <button>Done</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+<div class="navi">
+     <div class="navigation">
+        <ul>
+            <div class="home">
+                <span class="material-symbols-outlined">
+                    home
+                    </span>
+                    <p><a href="home.html">home</a></p>
+            </div>
+            <div class="menu activee">
+                <span class="material-symbols-outlined">
+                    fastfood
+                    </span>
+                    <p><a href="menu.html">menu</a></p>
+            </div>
+            <div class="contact">
+                <span class="material-symbols-outlined">
+                    contact_page
+                    </span>
+                    <p><a href="contact.html">contact</a></p>
+            </div>
+        </ul>
+    </div>
+</div>
+   
+
+</body>
+<script>
+    function closepreloader(){
+            document.getElementById("preloader").style.display = 'none';
+        }
+        window.addEventListener("load",function(){
+            setTimeout(closepreloader, 2000);
+            
+        });
+ </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+   const menuItems = document.querySelectorAll('.menu-item');
+const contentSections = document.querySelectorAll('.content');
+
+// Add click event to each menu item
+menuItems.forEach(item => {
+    item.addEventListener('click', function() {
+        // Remove "active" class from all menu items and sections
+        menuItems.forEach(i => i.classList.remove('active'));
+        contentSections.forEach(section => section.classList.remove('active'));
+
+        // Add "active" class to the clicked menu item
+        this.classList.add('active');
+
+        // Show the corresponding content section
+        const target = this.getAttribute('data-target');
+        document.getElementById(target).classList.add('active');
+    });
+});
+
+</script>
+
+<script>
+    // Add an event listener to the search input
+document.getElementById('search-input').addEventListener('input', function() {
+    const query = this.value.toLowerCase(); // Get the search query and convert to lowercase for case-insensitive search
+    const cards = document.querySelectorAll('.card'); // Get all the cards
+
+    // Loop through the cards and hide/show based on the search query
+    cards.forEach(function(card) {
+        const dishName = card.querySelector('.name').textContent.toLowerCase(); // Get the name of the dish
+        const description = card.querySelector('.p').textContent.toLowerCase(); // Get the description (if applicable)
+
+        // Check if the search query matches either the dish name or description
+        if (dishName.includes(query) || description.includes(query)) {
+            card.style.display = 'block'; // Show the card if it matches
+        } else {
+            card.style.display = 'none'; // Hide the card if it doesn't match
+        }
+    });
+});
+
+</script>
+
+<script>
+ // Event listener for the shopping basket click
+document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('shopping-basket')) {
+        // Show the red dot
+        const notificationDot = document.querySelector('.notification-dot');
+        notificationDot.style.display = 'block';
+    }
+});
+
+// Toggle section handling
+document.getElementById('toggle-section').addEventListener('click', function() {
+    const section2 = document.getElementById('orderDetailsSection');
+
+    // Toggle the sliding animation
+    if (section2.classList.contains('show')) {
+        section2.classList.remove('show');
+        section2.classList.add('hide');
+        setTimeout(() => {
+            section2.style.display = 'none';
+        }, 500); // Duration of the animation (0.5s)
+    } else {
+        section2.style.display = 'block'; // Ensure the section is visible before applying animation
+        section2.classList.remove('hide');
+        setTimeout(() => {
+            section2.classList.add('show');
+        }, 10); // Slight delay to trigger the animation
+    }
+});
+
+
+
+</script>
+<script src="menu.js"></script>
+<script>
+ document.querySelector('.done button').addEventListener('click', function() {
+    const customerName = document.getElementById('name').value;
+    const customerNumber = document.getElementById('number').value;
+    const deliveryType = document.getElementById('pickup-option').checked ? 'Pick Up' : 'Delivery';
+    const deliveryAddress = deliveryType === 'Delivery' ? document.getElementById('delivery-address').value : '';
+    const restaurantAddress = 'opposite national open university'; // Hard-coded restaurant address for Pick Up
+    const totalItems = document.querySelector('.ordered h2').textContent;
+    const totalPrice = document.querySelector('.total-price').textContent;
+
+    // Collect the orders and their images
+    const orders = [];
+    document.querySelectorAll('.list .list-item').forEach(item => {
+        const itemName = item.querySelector('.item-name').textContent;
+        const itemQuantity = item.querySelector('.quantity').textContent;
+        const itemPrice = item.querySelector('.item-price').textContent;
+        const itemImage = item.querySelector('.item-image').src;
+        orders.push({ itemName, itemQuantity, itemPrice, itemImage });
+    });
+
+    // Store the data in localStorage
+    localStorage.setItem('customerName', customerName);
+    localStorage.setItem('customerNumber', customerNumber);
+    localStorage.setItem('deliveryType', deliveryType);
+    localStorage.setItem('deliveryAddress', deliveryAddress);
+    localStorage.setItem('restaurantAddress', restaurantAddress);
+    localStorage.setItem('totalItems', totalItems);
+    localStorage.setItem('totalPrice', totalPrice);
+    localStorage.setItem('orders', JSON.stringify(orders));
+
+    // Redirect to the summary page
+    window.location.href = 'summary.html';
+});
+
+
+</script>
+
+<script>
+    // Handle closing the section when the close button is clicked
+document.getElementById('close-section').addEventListener('click', function() {
+    const section2 = document.getElementById('orderDetailsSection');
+    
+    section2.classList.remove('show');
+    section2.classList.add('hide');
+
+    // Hide the section after the animation completes
+    setTimeout(() => {
+        section2.style.display = 'none';
+    }, 500); // Duration matches your slide animation duration
+});
+
+
+</script>
+
+<script>
+ // Open section with keyframe swipe-in animation
+document.getElementById('toggle-section').addEventListener('click', function() {
+    const section = document.getElementById('orderDetailsSection');
+    section.style.display = 'block'; // Make it visible
+    section.classList.remove('close'); // Remove any 'close' class
+    section.classList.add('open'); // Add the 'open' class for swipe-in
+});
+
+// Close section with keyframe swipe-out animation
+document.getElementById('close-section').addEventListener('click', function() {
+    const section = document.getElementById('orderDetailsSection');
+    section.classList.remove('open'); // Remove 'open' class
+    section.classList.add('close'); // Add 'close' class for swipe-out
+    setTimeout(function() {
+        section.style.display = 'none'; // Hide after animation completes
+    }, 500); // Wait for the animation duration (0.5s) before hiding
+});
+
+
+
+</script>
+
+<script>
+ 
+function showPlateNotification() {
+    const notification = document.getElementById('plate-notification');
+    notification.classList.add('show');
+
+   
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, 3000); 
+}
+  
+
+window.addEventListener('load', function() {
+  showPlateNotification();
+});
+
+
+</script>
+</html>

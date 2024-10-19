@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <style>
+        /* Add some basic styling for visibility */
+        .order-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .item-image img {
+            width: 50px; /* Adjust size as needed */
+            height: auto;
+        }
+        .item-details {
+            margin-left: 10px;
+            flex-grow: 1; /* Allow details to grow and fill space */
+        }
+    </style>
+</head>
+<body>
+    <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="order-list">
+            <!-- Ordered items will be populated here -->
+        </div>
+        
+        <div class="total-price">Total Price: &#8358;0.00</div>
+        <button id="place-order">Place Order</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const orderList = document.querySelector('.order-list');
+            const totalPriceDisplay = document.querySelector('.total-price');
+            const orders = JSON.parse(localStorage.getItem('orders')) || [];
+
+            // Function to calculate total price
+            function calculateTotal() {
+                let totalPrice = 0;
+                orders.forEach(order => {
+                    totalPrice += order.price * order.quantity;
+                });
+                totalPriceDisplay.textContent = `Total Price: &#8358;${totalPrice.toFixed(2)}`;
+            }
+
+      // Function to display ordered items
+function displayOrders() {
+    orderList.innerHTML = ''; // Clear existing items to avoid duplicates
+    const orders = JSON.parse(localStorage.getItem('orders')) || []; // Retrieve orders from localStorage
+
+    orders.forEach((order, index) => {
+        const orderItem = document.createElement('div');
+        orderItem.classList.add('order-item');
+
+        // Use the correct image source from the order object
+        const imageSrc = order.image || 'https://via.placeholder.com/50'; // Default image if not provided
+
+        orderItem.innerHTML = `
+            <div class="item-image">
+                <img src="${imageSrc}" alt="${order.name}" class="ordered-item-img" onerror="this.src='https://via.placeholder.com/50'" />
+            </div>
+            <div class="item-details">
+                <div class="item-name">${order.name}</div>
+                <div class="item-price">Price: &#8358;${order.price.toFixed(2)}</div>
+                <div class="quantity-controls">
+                    <button class="decrease" data-index="${index}">-</button>
+                    <span class="quantity">${order.quantity}</span>
+                    <button class="increase" data-index="${index}">+</button>
+                </div>
+            </div>
+            <button class="delete" data-index="${index}">Delete</button>
+        `;
+
+        orderList.appendChild(orderItem); // Append the order item to the list
+    });
+    calculateTotal(); // Calculate total price after displaying orders
+}
+
+// Call this function to initially display orders
+displayOrders();
+
+           
+
+            // Event listener for quantity controls and delete
+            orderList.addEventListener('click', function(event) {
+                const index = event.target.getAttribute('data-index');
+                if (event.target.classList.contains('increase')) {
+                    orders[index].quantity += 1; // Increase quantity
+                } else if (event.target.classList.contains('decrease')) {
+                    if (orders[index].quantity > 1) {
+                        orders[index].quantity -= 1; // Decrease quantity
+                    }
+                } else if (event.target.classList.contains('delete')) {
+                    if (confirm('Are you sure you want to delete this item?')) {
+                        orders.splice(index, 1); // Remove item from orders
+                    }
+                }
+                localStorage.setItem('orders', JSON.stringify(orders)); // Update localStorage
+                displayOrders(); // Refresh display
+            });
+
+            // Add functionality to 'Place Order' button
+            document.getElementById('place-order').addEventListener('click', function() {
+                alert('Your order has been placed!'); // Alert user
+                localStorage.removeItem('orders'); // Clear the order from localStorage after placing the order
+                window.location.href = 'thankyou.html'; // Redirect to a thank you page or another page
+            });
+        });
+    </script>
+</body>
+</html>

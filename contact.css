@@ -1,0 +1,812 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Preloader Styles */
+#preloader {
+    background: #fff url(images/gif.gif) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f6f6f6;
+    font-family: "Nunito", sans-serif;
+    padding: 10px;
+}
+
+header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+    border-radius: 20px;
+    }
+    
+    .logo img{
+        width: 220px;
+        height: 50px;
+        margin-left: 20px;
+    }
+    
+    .start{
+        display: flex;
+    }
+    
+    .location{
+        display: flex;
+        margin-top: 20px;
+       
+    }
+    
+    .nav ul{
+        display: flex;
+        background-color: #f6f6f6;
+        width: 350px;
+        height: 65px;
+        justify-content: space-between;
+        padding: 5px;
+        border-radius: 50px;
+       margin-left: 100px ;
+    }
+    
+    .home , .menu, .contact{
+        display: flex;
+        text-transform: capitalize;
+        gap: 5px;
+        color: #a2a2a2;
+    }
+    
+    .home p , .menu p , .contact p{
+        margin-top: 2px;
+        font-weight: 500;
+    }
+    .home a , .menu a , .contact a{
+        color: #a2a2a2;
+        text-decoration: none;
+    }
+    
+    .menu, .home{
+    margin-top: 15px;
+    
+    }
+    
+    
+    
+    
+    .activee{
+        background-color: #e68a4d;
+        border-radius: 50px;
+        padding: 10px;
+       color: #fff;
+        margin-right: 0px;
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .activee a{
+       color: #fff;
+        font-weight: 700;
+    }
+    
+    ion-icon{
+        font-size: 20px;
+    }
+    
+    .socials{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+.view button{
+    background-color: #e68a4d;
+    width: 180px;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: "Nunito", sans-serif;
+    border: none;
+    height: 55px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.view button:hover{
+    background-color: #f79b61
+}
+
+.view button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+}
+
+.map{
+    margin-top: 10px;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    
+
+}
+
+iframe{
+    height: 670px;
+    
+}
+
+.map span{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 28px;
+    display: none;
+}
+
+
+.info{
+width: 100%;
+margin-top: 10px;
+
+background-color: #fff;
+border-radius: 10px;
+height: max-content;
+padding: 10px;
+font-family: "Nunito", sans-serif;
+}
+
+.info h2{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.phone , .phone1 , .email , .locatio{
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.phone span , .phone1 span , .email span , .locatio span{
+    color:  #d16a28;
+    font-size: 20px;
+}
+
+.phone1 , .email , .locatio{
+    margin-top: 10px;
+}
+
+
+.information{
+    width: 25%;
+position: absolute;
+right: 20px;
+top: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+}
+
+
+
+
+.navigation{
+    display: none;
+}
+
+
+@media(max-width:470px) {
+
+    #preloader {
+        background: #fff url(images/gif.gif) no-repeat center center;
+        background-size: 100%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+    }
+
+    body{
+        padding: 0;
+    }
+    
+ header{
+    display: none;
+}
+
+.navi{
+    display: block;
+}
+
+.navigation{
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+    .navigation ul{
+        display: flex;
+        width: 85%;
+        justify-content: space-between;
+        padding: 5px;
+        border-radius: 50px;   background-color: #fff;
+        height: 70px;
+    }
+
+    .home , .menu, .contact{
+        display: flex;
+        text-transform: capitalize;
+        gap: 3px;
+        color: #a2a2a2;
+    }
+    
+    .home p , .menu p , .contact p{
+        margin-top: 2px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .home span , .menu span, .contact span{
+        font-size: 20px;
+    }
+    
+    .home span , .menu span{
+        margin-top: 2px;
+    }
+
+    .home a , .menu a , .contact a{
+        color: #a2a2a2;
+        text-decoration: none;
+    }
+    
+    .menu, .home{
+    margin-top: 15px;
+    margin-left: 15px;
+    }
+    
+    
+    .activee{
+     
+        border-radius: 30px;
+        padding: 10px;
+        color: #fff;
+        margin-right: 0px;
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+    }
+    
+    .activee a{
+        color: #fff;
+    }
+
+    @keyframes slideUp {
+        0% {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideDown {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+    }
+    
+    .slide-up {
+        animation: slideUp 0.5s ease-in-out forwards;
+    }
+    
+    .slide-down {
+        animation: slideDown 0.5s ease-in-out forwards;
+    }
+    
+
+
+.map{
+  margin-top: 0px;
+    width: 100%;
+    height: max-content;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.map span{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    font-size: 40px;
+    display: block;
+}
+
+
+
+
+iframe{
+    height: 800px;
+}
+
+
+.info{
+    width: 90%;
+    
+    
+    background-color: #fff;
+border-radius: 10px;
+
+    height: max-content;
+    padding: 10px;
+    font-family: "Nunito", sans-serif;
+    }
+    
+    .info h2{
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 28px;
+    }
+    
+    .phone , .phone1 , .email , .locatio{
+        display: flex;
+        gap: 10px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .phone span , .phone1 span , .email span , .locatio span{
+      
+        font-size: 20px;
+    }
+    
+    .phone1 , .email , .locatio{
+        margin-top: 10px;
+    }
+    
+    
+    .information{
+        width: 100%;
+        position: absolute;
+       
+        top: 350px;
+        left: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: block;
+        background-color:transparent;
+        height: max-content;
+border-radius: 10px;
+display: none;
+transition: all 0.5s ease-in-out;
+    }
+
+    .section{
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    
+   
+
+}
+
+
+
+@media only screen and (min-width: 470px) and (max-width: 900px) {
+    body{
+        padding: 0;
+    }
+    
+ header{
+    display: none;
+}
+
+.navi{
+    display: block;
+}
+
+.navigation{
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navigation ul{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    padding: 5px;
+    border-radius: 50px;   background-color: #fff;
+    height: 80px;
+}
+
+    .home , .menu, .contact{
+        display: flex;
+        text-transform: capitalize;
+        gap: 5px;
+        color: #a2a2a2;
+    }
+    
+    .home span , .menu span , .contact span{
+        font-size: 30px;
+    }
+    
+    .home p , .menu p , .contact p{
+        margin-top: 2px;
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .home a , .menu a , .contact a{
+        color: #a2a2a2;
+        text-decoration: none;
+    }
+    
+    .menu, .home{
+    margin-top: 20px;
+
+    }
+    
+    
+    .activee{
+   
+        border-radius: 50px;
+        padding: 10px;
+        color: #fff;
+        margin-right: 0px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+    }
+    
+    .activee a{
+        color: #fff;
+    }
+
+    @keyframes slideUp {
+        0% {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideDown {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+    }
+    
+    .slide-up {
+        animation: slideUp 0.5s ease-in-out forwards;
+    }
+    
+    .slide-down {
+        animation: slideDown 0.5s ease-in-out forwards;
+    }
+    
+
+
+.map{
+  margin-top: 0px;
+    width: 100%;
+    height: max-content;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.map span{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 40px;
+    display: block;
+}
+
+
+
+
+iframe{
+    height: 1300px;
+}
+
+
+.info{
+    width: 60%;
+    
+    
+    background-color: #fff;
+border-radius: 15px;
+
+    height: max-content;
+    padding: 15px;
+    font-family: "Nunito", sans-serif;
+    }
+    
+    .info h2{
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 32px;
+    }
+    
+    .phone , .phone1 , .email , .locatio{
+        display: flex;
+        gap: 10px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .phone span , .phone1 span , .email span , .locatio span{
+       
+        font-size: 20px;
+    }
+    
+    .phone1 , .email , .locatio{
+        margin-top: 10px;
+    }
+    
+    
+    .information{
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: block;
+        background-color:transparent;
+        height: max-content;
+border-radius: 10px;
+display: none;
+transition: all 0.5s ease-in-out;
+    }
+
+    .section{
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    
+
+     
+}
+
+
+@media only screen and (min-width: 900px) and (max-width: 1105px) {
+
+    header{
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        
+        border-radius: 20px;
+        }
+        
+        .logo img{
+            width: 180px;
+            height: 50px;
+            margin-left: 20px;
+        }
+        
+        .start{
+            display: flex;
+        }
+        
+        .location{
+            display: flex;
+            margin-top: 20px;
+           
+        }
+        
+        .nav ul{
+            display: flex;
+            background-color: #f6f6f6;
+            width: 300px;
+            height: 65px;
+            justify-content: space-between;
+            padding: 5px;
+            border-radius: 50px;
+           margin-left: 50px ;
+        }
+        
+        .home , .menu, .contact{
+            display: flex;
+            text-transform: capitalize;
+            gap: 3px;
+            color: #a2a2a2;
+        }
+        
+        .home p , .menu p , .contact p{
+            margin-top: 2px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+.home span, menu span, .contact span{
+    font-size: 20px;
+}
+
+        .home a , .menu a , .contact a{
+            color: #a2a2a2;
+            text-decoration: none;
+        }
+        
+        .menu, .home{
+        margin-top: 15px;
+        
+        }
+        
+        
+        
+        
+        .activee{
+            background-color: #e68a4d;
+            border-radius: 50px;
+            padding: 10px;
+           color: #fff;
+            margin-right: 0px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .activee a{
+           color: #fff;
+            font-weight: 700;
+        }
+        
+        ion-icon{
+            font-size: 20px;
+        }
+        
+        .socials{
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+   
+    
+
+    .map span{
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        font-size: 28px;
+        display: none;
+    }
+    
+    
+    .info{
+    width: 100%;
+    margin-top: 10px;
+    
+    background-color: #fff;
+    border-radius: 10px;
+    height: max-content;
+    padding: 10px;
+    font-family: "Nunito", sans-serif;
+    }
+    
+    .info h2{
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 28px;
+    }
+    
+    .phone , .phone1 , .email , .locatio{
+        display: flex;
+        gap: 10px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .phone span , .phone1 span , .email span , .locatio span{
+        color:  #d16a28;
+        font-size: 20px;
+    }
+    
+    .phone1 , .email , .locatio{
+        margin-top: 10px;
+    }
+    
+    
+    .information{
+        width: 30%;
+    position: absolute;
+    right: 20px;
+    top: 120px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block;
+    }
+    
+    
+    
+    
+    .navigation{
+        display: none;
+    }
+    
+
+    .nav ul{
+        margin-right: 0px   ;
+    }
+    
+        .view button{
+            background-color: #e68a4d;
+            width: 150px;
+            padding: 10px;
+            border-radius: 30px;
+            font-family: "Nunito", sans-serif;
+            border: none;
+            height: 55px;
+            margin-top: 5px;
+           
+            font-size: 16px;
+            text-transform: capitalize;
+            margin-left: 10px;
+           
+        }
+
+
+    }
