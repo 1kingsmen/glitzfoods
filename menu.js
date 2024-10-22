@@ -11,31 +11,43 @@
 
     // Function to update the total price including delivery if applicable
    // Function to update the total price including delivery and plate cost
+   // Function to update the total price including delivery and plate cost
 function updateTotalPrice() {
     let totalPrice = 0;
-    const listItems = list.querySelectorAll('.list-item');
+    const listItems = document.querySelectorAll('.list-item');
 
     listItems.forEach(item => {
         const itemPriceText = item.querySelector('.item-price').textContent.trim();
         const itemPrice = parseFloat(itemPriceText.replace(/[^0-9.-]+/g, '')); // Clean price
         const itemQuantity = parseInt(item.querySelector('.quantity').textContent); // Get quantity
-
+        
+        console.log(`Item Price: ${itemPrice}, Quantity: ${itemQuantity}`);
+        
         if (!isNaN(itemPrice) && !isNaN(itemQuantity)) {
-            const plateCost = 400; // Add 400 for each dish as plate cost
+            const plateCost = 400; // Add 400 Naira for every item, regardless of category
+
+            console.log(`Plate Cost: ${plateCost}`);
+
             totalPrice += (itemPrice + plateCost) * itemQuantity; // Multiply by quantity and add to total price
         }
     });
 
     // Check if delivery is selected and add delivery cost
     const deliveryOption = document.getElementById('delivery-option');
-    if (deliveryOption.checked) {
-        const deliveryCost = 500; // Example delivery cost
+    if (deliveryOption && deliveryOption.checked) {
+        const deliveryCost = 1500; // Example delivery cost
         totalPrice += deliveryCost;
+        console.log(`Delivery cost added: ₦${deliveryCost}`);
     }
 
-    // Update total price on the UI
-    document.querySelector('.total-price').textContent = `Total Price: ${totalPrice.toFixed(2)}`;
+    // Update the total price on the page
+    console.log(`Total Price Before Update: ₦${totalPrice.toFixed(2)}`);
+    document.querySelector('.total-price').textContent = `Total: ₦${totalPrice.toFixed(2)}`;
+    console.log(`Total Price Updated: ₦${totalPrice.toFixed(2)}`);
 }
+
+
+
 
 
     /// Function to handle adding items to the order list
