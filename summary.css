@@ -303,14 +303,14 @@ ul{
     list-style-type: none;
 }
 
-.button{
+.button {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
- #sendEmail{
+#sendEmail {
     width: 80%;
     height: 50px;
     border-radius: 10px;
@@ -321,11 +321,38 @@ ul{
     letter-spacing: 1px;
     text-transform: capitalize;
     transition: 0.3s all;
+    position: relative;
 }
 
+#sendEmail.loading {
+    background-color: #0b8e66;
+    pointer-events: none;
+}
 
-#sendEmail:hover{
-    color: #f1f0f0;
+#sendEmail.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+#sendEmail:hover {
     color: #fff;
     cursor: pointer;
 }

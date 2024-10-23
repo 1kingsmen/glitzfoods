@@ -17,16 +17,21 @@ function updateTotalPrice() {
     const listItems = document.querySelectorAll('.list-item');
 
     listItems.forEach(item => {
+        const itemName = item.querySelector('.item-name').textContent.trim();
         const itemPriceText = item.querySelector('.item-price').textContent.trim();
         const itemPrice = parseFloat(itemPriceText.replace(/[^0-9.-]+/g, '')); // Clean price
         const itemQuantity = parseInt(item.querySelector('.quantity').textContent); // Get quantity
         
-        console.log(`Item Price: ${itemPrice}, Quantity: ${itemQuantity}`);
+        console.log(`Item: ${itemName}, Price: ${itemPrice}, Quantity: ${itemQuantity}`);
         
         if (!isNaN(itemPrice) && !isNaN(itemQuantity)) {
-            const plateCost = 400; // Add 400 Naira for every item, regardless of category
+            let plateCost = 0;
 
-            console.log(`Plate Cost: ${plateCost}`);
+            // Apply 400 Naira extra cost only for "Rice and beans"
+            if (itemName === 'Rice and beans'  || itemName === 'fried and jellof rice' || itemName === 'white Rice' || itemName === 'fried rice' || itemName === 'jellof rice' || itemName === 'moi moi' || itemName === 'salad' || itemName === 'fried plantain' || itemName === 'chips and eggs' || itemName === 'indomie and egg' || itemName === 'semovita' || itemName === 'amala'  || itemName === 'pounded yam' || itemName === 'eba' || itemName === 'akpu' || itemName === 'beef' || itemName === 'pomo' || itemName === 'intestine' || itemName === 'fish' || itemName === 'goat meat' || itemName === 'cow leg' || itemName === 'cow tail' || itemName === 'chicken' || itemName === 'cow leg pepper soup' || itemName === 'intestine pepper soup' || itemName === 'goat meat pepper soup') {
+                plateCost = 400;
+                console.log(`Plate cost applied for ${itemName}: ₦${plateCost}`);
+            }
 
             totalPrice += (itemPrice + plateCost) * itemQuantity; // Multiply by quantity and add to total price
         }
@@ -45,7 +50,6 @@ function updateTotalPrice() {
     document.querySelector('.total-price').textContent = `Total: ₦${totalPrice.toFixed(2)}`;
     console.log(`Total Price Updated: ₦${totalPrice.toFixed(2)}`);
 }
-
 
 
 

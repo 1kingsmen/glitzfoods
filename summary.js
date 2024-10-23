@@ -49,3 +49,16 @@
        `;
        orderList.appendChild(listItem);
    });
+   document.getElementById('sendEmail').addEventListener('click', function() {
+    var button = this;
+    
+    // Add loading class to button
+    button.classList.add('loading');
+    
+    // Simulate a delay before proceeding to the next page (e.g., 2 seconds)
+    setTimeout(function() {
+        // Remove the loading state and navigate to the next page
+        button.classList.remove('loading');
+        window.location.href = 'success.html'; // Replace with your actual next page URL
+    }, 2000); // 2 second delay for the loading effect
+});

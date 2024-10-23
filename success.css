@@ -17,19 +17,151 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-family: "Nunito", sans-serif;
 }
 
-
-
-@media screen and (max-width:480px) {
-    body{
-        padding-top: 50%;
-    }
-   
 img{
     width: 300px;
     height: 300px;
 }
 
+
+.container{
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.button button{
+    width: 20%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e68a4d;
+  
+    text-transform: capitalize;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: "Nunito", sans-serif;
+}
+
+.button button a{
+    text-decoration: none; 
+     color: #fff;
+     font-weight: 700;
+}
+
+.button button:hover{
+    cursor: pointer;
+    background-color: #eb7526;
+}
+
+
+@media screen and (max-width:480px) {
+    body{
+        background: #fff;
+     padding-top: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Nunito", sans-serif;
+    }
+    
+   
+    img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    
+    .container{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .button{
+        width: 100%;
+       position: fixed;
+        bottom: 10px;   
+    }
+    
+    .button button{
+      
+        width: 90%;
+        height: 60px;
+      
+        border-radius: 5px;
+        border: none;
+        background-color: #e68a4d;
+      
+        text-transform: capitalize;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-family: "Nunito", sans-serif;
+    }
+    
+    .button button a{
+        text-decoration: none; 
+         color: #fff;
+         font-weight: 700;
+    }
+    
+    .button button:hover{
+        cursor: pointer;
+        background-color: #eb7526;
+    }
+
+}
+
+
+@media screen  and (min-width:480px )  and (max-width:900px) {
+
+    body{
+        background: #fff;
+     padding-top: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Nunito", sans-serif;
+    }
+    
+    img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    
+    .container{
+        text-align: center;
+        width: 100%;
+    }
+    
+    
+    
+    .button button{
+        width: 50%;
+        height: 60px;
+        margin-top: 30px;
+        border-radius: 5px;
+        border: none;
+        background-color: #e68a4d;
+      
+        text-transform: capitalize;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-family: "Nunito", sans-serif;
+    }
+    
+    .button button a{
+        text-decoration: none; 
+         color: #fff;
+         font-weight: 700;
+    }
+    
+    .button button:hover{
+        cursor: pointer;
+        background-color: #eb7526;
+    }
 }
